@@ -3,6 +3,7 @@ import Forecast from "@/components/Forecast";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Report from "@/components/Report";
+import Resources from "@/components/Resources";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Forecast />
       <Report />
+      <Resources />
     </>
 
   );
