@@ -27,8 +27,8 @@ const Hero = () => {
                 </div>
 
                 {/* Image or 3D image section */}
-                <div className="max-md:absolute inset-0 max-md:opacity-30">
-                    <Image width={736} height={736} className="w-auto mx-auto" src='/assets/images/virus.png' alt="virus image" />
+                <div className="max-md:absolute inset-0 max-md:opacity-50 -z-10">
+                    <Image width={736} height={736} className="w-auto mx-auto md:scale-[1.2]" src='/assets/images/lassaGreen.png' alt="virus image" />
                 </div>
             </div>
         </Section>
