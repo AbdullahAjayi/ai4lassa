@@ -17,7 +17,7 @@ const Hero = () => {
                     <div className="h-full my-auto flex flex-col gap-28">
                         <div>
                             <h1 className="h1">Together, We Can Stop <span className="text-green-800">LASSA Fever!</span></h1>
-                            <p className="body-1 md:max-w-[80%]">Stay informed about LASA fever outbreaks, take action by reporting cases, and help prevent the spread of the disease</p>
+                            <p className="body-1 md:max-w-[80%] max-md:font-medium">Stay informed about LASA fever outbreaks, take action by reporting cases, and help prevent the spread of the disease</p>
                         </div>
                         <div>
                             <Button>Check Outbreak Forecast</Button>
