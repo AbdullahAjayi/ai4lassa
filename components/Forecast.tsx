@@ -4,7 +4,7 @@ import LinkBtn from "./LinkBtn"
 
 const Forecast = () => {
     return (
-        <Section className="relative pt-20 md:pt-40">
+        <Section id="forecast" className="relative pt-20 md:pt-40">
             <div
                 style={{
                     backgroundImage: `url('/assets/images/mapbg.png')`,

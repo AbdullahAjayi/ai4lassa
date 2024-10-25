@@ -3,7 +3,7 @@ import Section from "./Section"
 
 const About = () => {
     return (
-        <Section className="pt-20 relative">
+        <Section id="about" className="pt-20 relative">
             <h2 className="h2 relative">
                 <span>How Does Our System Help?</span>
                 <div className="absolute top-0 -left-4 -translate-y-2/3">

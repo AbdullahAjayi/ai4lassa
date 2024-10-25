@@ -2,7 +2,7 @@ import Section from "./Section"
 
 const Report = () => {
     return (
-        <Section className="pt-20">
+        <Section id="report" className="pt-20">
             <h2 className="h2">Have You Witnessed or Experienced Symptoms?</h2>
             <p className="mt-8 max-w-[550px]">If you or someone you know is showing symptoms of LASSA fever, don't wait. Report it now to local health authorities</p>
             <form action="" className="max-w-[450px] mt-10">

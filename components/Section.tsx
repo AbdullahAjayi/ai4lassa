@@ -4,12 +4,13 @@ import { ReactNode } from 'react';
 type Props = {
     children: ReactNode
     className?: string
+    id?: string
 }
 
-const Section = ({ children, className }: Props) => {
+const Section = ({ children, className, id }: Props) => {
 
     return (
-        <section className={clsx("px-10 pb-10 max-w-[1500px] mx-auto", className)}>{children}</section>
+        <section id={id} className={clsx("px-10 pb-10 max-w-[1500px] mx-auto", className)}>{children}</section>
     )
 }
 

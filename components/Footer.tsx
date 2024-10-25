@@ -2,7 +2,7 @@ import Button from "./Button"
 
 const Footer = () => {
     return (
-        <footer className="pt-20 max-w-[1500px] mx-auto">
+        <footer id="contact" className="pt-20 max-w-[1500px] mx-auto">
             <div className="px-10 sm:flex justify-between">
                 <div className="">
                     <small className="font-semibold mb-6 sm:mb-10 block">Quick navigate our pages</small>
