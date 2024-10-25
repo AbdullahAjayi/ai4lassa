@@ -61,7 +61,7 @@ const Header = () => {
                                     { navItem: "Contact", link: '#contact' }
                                 ].map((item, index) => (
                                     <li key={index} className="cursor-pointer font-medium text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
-                                        <a href={item.link}>{item.navItem}</a>
+                                        <a href={item.link} className="block">{item.navItem}</a>
                                     </li>
                                 ))}
                             </ul>
