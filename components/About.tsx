@@ -6,6 +6,7 @@ const About = () => {
         <Section id="about" className="pt-20 relative">
             <h2 className="h2 relative">
                 <span>How Does Our System Help?</span>
+                {/* rat image */}
                 <div className="absolute top-0 -left-4 -translate-y-2/3">
                     <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
                 </div>

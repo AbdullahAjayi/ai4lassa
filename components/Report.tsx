@@ -1,9 +1,18 @@
+import Image from "next/image"
+
 import Section from "./Section"
 
 const Report = () => {
     return (
         <Section id="report" className="pt-20">
-            <h2 className="h2">Have You Witnessed or Experienced Symptoms?</h2>
+            <h2 className="h2 relative">
+                <span>Have You Witnessed or Experienced Symptoms?
+                </span>
+                {/* rat image */}
+                <div className="absolute top-0 -left-4 -translate-y-2/3">
+                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
+                </div>
+            </h2>
             <p className="mt-8 max-w-[550px]">If you or someone you know is showing symptoms of LASSA fever, don't wait. Report it now to local health authorities</p>
             <form action="" className="max-w-[450px] mt-10">
                 <div className="flex flex-col gap-4">

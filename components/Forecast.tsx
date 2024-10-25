@@ -14,7 +14,13 @@ const Forecast = () => {
                 }}
                 className="absolute inset-0 w-full h-full pointer-events-none -z-10">
             </div>
-            <h2 className="h2">Current Forecast for LASSA Fever Outbreaks</h2>
+            <h2 className="h2 relative">
+                <span>Current Forecast for LASSA Fever Outbreaks</span>
+                {/* rat image */}
+                <div className="absolute top-0 -left-4 -translate-y-2/3">
+                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
+                </div>
+            </h2>
             <div className="flex justify-center">
                 <Image src='/assets/images/forecast_map.png' alt='forecase map' width={1241} height={1241} className="md:w-1/2" />
             </div>
