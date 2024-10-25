@@ -24,7 +24,7 @@ const About = () => {
                     </h3>
                     <p className="">Our advanced algorithms predict potential LASSA fever outbreaks based on real-time data, allowing communities to prepare</p>
                     {/* map vector image */}
-                    <div className="absolute -bottom-16 left-[35%] -translate-x-1/2">
+                    <div className="absolute -bottom-16 max-sm:-bottom-12 left-[35%] -translate-x-1/2">
                         <Image className="scale-[.6]" src='/assets/images/map-vector-1.png' alt='map-vector-image' width={121} height={121} />
                     </div>
                 </div>
@@ -32,7 +32,7 @@ const About = () => {
                     <h3 className="h3 relative w-fit">
                         <span>Case Reporting</span>
                         {/* arrow vector image */}
-                        <div className="absolute -top-[7rem] -right-[10rem] sm:-right-[20rem] max-md:rotate-45 sm:rotate-[70deg] md:rotate-0 max-md:scale-[.7] md:-top-[8.4rem] md:-left-10">
+                        <div className="absolute -top-[7rem] -right-[10rem] sm:-right-[20rem] max-sm:rotate-45 max-md:rotate-[70deg] max-md:scale-[.7] md:-top-[8.4rem] md:-left-10">
                             <Image src='/assets/images/arrow-vector-1.png' alt="arrow-image" width={137} height={181} />
                         </div>
                         <div className="absolute -top-16 -right-20">{/* lassa image */}
@@ -41,7 +41,7 @@ const About = () => {
                     </h3>
                     <p className="">Suspect a case? Easily report it to health officials through our secure platform. Quick action can save lives</p>
                     {/* map vector image */}
-                    <div className="absolute -bottom-16 left-0">
+                    <div className="absolute -bottom-16 max-sm:-bottom-10 left-0">
                         <Image className="scale-[.6]" src='/assets/images/map-vector-2a.png' alt='map-vector-image' width={107} height={114} />
                     </div>
                     <div className="absolute top-10 right-4">
