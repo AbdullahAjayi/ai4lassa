@@ -10,6 +10,7 @@ const About = () => {
                     <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
                 </div>
             </h2>
+            {/* dot patterns */}
             <div className="absolute -z-10 inset-0 top-36 overflow-hidden">
                 <Image src='/assets/images/dot-patterns.png' alt="dot-patterns" width={1832} height={838} />
             </div>
@@ -17,7 +18,7 @@ const About = () => {
                 <div className="col-start-1 relative">
                     <h3 className="h3 relative w-fit">
                         <span>Outbreak Forcasting</span>
-                        <div className="absolute -top-16 -right-20">
+                        <div className="absolute -top-16 -right-20">{/* lassa image */}
                             <Image src='/assets/images/lassaGreen.png' alt="lassa-image" width={153} height={153} className="opacity-60 -z-10 scale-[.6]" />
                         </div>
                     </h3>
@@ -30,10 +31,11 @@ const About = () => {
                 <div className="md:col-start-2 row-start-2 relative">
                     <h3 className="h3 relative w-fit">
                         <span>Case Reporting</span>
-                        <div className="max-md:hidden absolute -top-[8.4rem] -left-10">
+                        {/* arrow vector image */}
+                        <div className="absolute -top-[7rem] -right-[10rem] sm:-right-[20rem] max-md:rotate-45 sm:rotate-[70deg] md:rotate-0 max-md:scale-[.7] md:-top-[8.4rem] md:-left-10">
                             <Image src='/assets/images/arrow-vector-1.png' alt="arrow-image" width={137} height={181} />
                         </div>
-                        <div className="absolute -top-16 -right-20">
+                        <div className="absolute -top-16 -right-20">{/* lassa image */}
                             <Image src='/assets/images/lassaGreen.png' alt="lassa-image" width={153} height={153} className="opacity-60 -z-10 scale-[.6]" />
                         </div>
                     </h3>
@@ -49,8 +51,9 @@ const About = () => {
                 <div className="col-start-1 row-start-3 relative">
                     <h3 className="h3 relative w-fit">
                         <span>Real-time Alerts</span>
-                        <div className="max-md:hidden absolute -top-[9rem] -right-24">
-                            <Image src='/assets/images/arrow-vector-2.png' alt="arrow-image" width={123.85} height={217.06} />
+                        {/* arrow vector image */}
+                        <div className="absolute max-md:rotate-[330deg] -top-24 md:-top-[9rem] md:-right-24">
+                            <Image className="scale-[.8] md:scale-[1.2]" src='/assets/images/arrow-vector-2.png' alt="arrow-image" width={123.85} height={217.06} />
                         </div>
                         <div className="absolute -top-16 -right-20">
                             <Image src='/assets/images/lassaGreen.png' alt="lassa-image" width={153} height={153} className="opacity-60 -z-10 scale-[.6]" />
