@@ -9,7 +9,7 @@ const Header = () => {
         <header className="px-10 py-5 fixed top-0 w-full left-0 z-10  backdrop-blur-sm">
             <div className="flex max-md:justify-between items-center">
                 <div className="font-bold">
-                    <a href="#" className="">AI4LASSA</a>
+                    <a href="#" className="text-xl">AI4LASSA</a>
                 </div>
 
                 <div className="md:hidden relative">
