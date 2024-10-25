@@ -31,6 +31,8 @@ const Hero = () => {
                     <Image width={736} height={736} className="w-auto mx-auto md:scale-[1.2]" src='/assets/images/lassaGreen.png' alt="virus image" />
                 </div>
             </div>
+            {/* Gradient to blend image with next section */}
+            <div className="absolute w-full h-[100px] left-0 bottom-0 pointer-events-none bg-gradient-to-b from-appBg/0 to-appBg"></div>
         </Section>
     )
 }
