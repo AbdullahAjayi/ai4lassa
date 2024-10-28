@@ -7,11 +7,11 @@ const Footer = () => {
                 <div className="">
                     <small className="font-semibold mb-6 sm:mb-10 block">Quick navigate our pages</small>
                     <ul className="text-lg font-bold">
-                        <li>About</li>
+                        <li>About Us</li>
                         <li>Forecast</li>
                         <li>Report a Case</li>
                         <li>Resources</li>
-                        <li>Contact</li>
+                        <li>Contact Us</li>
                     </ul>
                 </div>
                 <div className="max-sm:mt-8">
