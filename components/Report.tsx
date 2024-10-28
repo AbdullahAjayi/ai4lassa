@@ -62,7 +62,7 @@ const Report = () => {
                     <input id="symptoms" type="text" name="symptoms" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" placeholder="e.g headache, fever" required></input>
                     <label htmlFor="number" className="text-sm font-bold">Phone Number:</label>
                     <input type="tel" id="number" name="number" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" placeholder="+234 812 038 81 57" required />
-                    <button type="submit" className="bg-btn hover:bg-green-900 transition-colors duration-300 text-white px-4 py-3 rounded-lg md:w-fit mt-6">Submit Report</button>
+                    <button type="submit" className="bg-btn font-semibold hover:bg-green-900 transition-colors duration-300 text-white px-4 py-3 rounded-lg md:w-fit mt-6">Submit Report</button>
                 </div>
             </form>
         </Section>
