@@ -28,7 +28,7 @@ const Hero = () => {
 
                 {/* Image or 3D image section */}
                 <div className="max-md:absolute inset-0 max-md:opacity-50 -z-10">
-                    <Image width={736} height={736} className="w-auto mx-auto md:scale-[1.2]" src='/assets/images/lassaGreen.png' alt="virus image" />
+                    <Image width={736} height={736} className="w-auto mx-auto md:scale-[1.2] md:translate-y-16 lg:translate-y-8" src='/assets/images/lassaGreen.png' alt="virus image" />
                 </div>
             </div>
             {/* Gradient to blend image with next section */}
