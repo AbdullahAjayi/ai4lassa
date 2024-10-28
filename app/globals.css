@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-nav-panel ::-webkit-scrollbar {
+  height: 1px;
+}
+
+.page-nav-panel ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}

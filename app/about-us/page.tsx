@@ -5,12 +5,12 @@ import Button from "@/components/Button"
 
 const page = () => {
     return (
-        <Section className="relative pt-20 pb-20">
+        <Section className="pt-32 lg:pt-20 pb-20">
             {/* Content nav panel */}
-            <div className="fixed top-0 max-md:left-0 md:right-0 max-md:w-screen md:h-screen md:w-1/4 md:pt-20">
-                <div className="hidden md:block text-sm font-bold mb-6">On this page</div>
-                <nav>
-                    <ul className="flex md:flex-col flex-nowrap gap-4 text-sm font-medium">
+            <div className="page-nav-panel fixed top-0 max-lg:left-0 lg:right-0 max-lg:py-4 max-lg:w-screen px-6 lg:h-screen lg:w-1/4 lg:pt-20 bg-appBg z-50">
+                <div className="hidden lg:block text-sm font-bold mb-6">On this page</div>
+                <nav className="lg:border-l lg:pl-3 lg:py-2">
+                    <ul className="flex lg:flex-col flex-nowrap whitespace-nowrap gap-4 text-xs font-medium max-lg:overflow-x-scroll max-lg:pb-1">
                         <li className="font-semibold"><a href="#about-ai4lassa">About AI4LASSA</a></li>
                         <li><a href="#our-vision">Our Vision</a></li>
                         <li><a href="#objectives">Objectives</a></li>
@@ -21,7 +21,7 @@ const page = () => {
                 </nav>
             </div>
             {/* Page content */}
-            <div id="about-page" className="md:w-3/4 pr-6">
+            <div id="about-page" className="lg:w-3/4 pr-6">
                 <h2 id="about-ai4lassa" className="h2 relative">
                     <span>About AI4Lassa</span>
                     {/* rat image */}
