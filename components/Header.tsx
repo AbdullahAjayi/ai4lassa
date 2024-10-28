@@ -52,7 +52,7 @@ const Header = () => {
                     {/* Nav for mobile */}
                     {menuOpen &&
                         (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10">
-                            <ul className="flex flex-col gap-3">
+                            <ul className="flex flex-col gap">
                                 {[
                                     { navItem: "About Us", link: '#about' },
                                     { navItem: "Forecast", link: '#forecast' },
@@ -60,7 +60,7 @@ const Header = () => {
                                     { navItem: "Resources", link: '#resources' },
                                     { navItem: "Contact Us", link: '#contact' }
                                 ].map((item, index) => (
-                                    <li key={index} className="cursor-pointer font-medium text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
+                                    <li key={index} className="cursor-pointer font-semibold text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
                                         <a href={item.link} className="block">{item.navItem}</a>
                                     </li>
                                 ))}
