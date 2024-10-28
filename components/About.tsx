@@ -22,7 +22,7 @@ const About = () => {
                 <p className="">The Development of an AI solution User Application to Raise Early Alarm to Improve Urban Health awareness, preparedness and Quick Response to Lassa Fever Outbreaks Project (AI4Lassa) is a project funded by the Tertiary Education Trust Fund (TETFUND) under the National Research Fund (NRF) in 2024.</p>
                 <p className="mt-6"><strong>AI4Lassa</strong> is a pioneering initiative developed to address the persistent challenge of Lassa fever outbreaks in Nigeria through the power of artificial intelligence (AI). Our solution focuses on enhancing early detection capabilities, enabling rapid response, and fostering community health awareness. With a targeted approach, AI4Lassa seeks to revolutionize Nigeria’s healthcare infrastructure by empowering public health stakeholders and communities to respond more effectively to health crises. This project stands as a significant public health milestone and invites collaboration and support to ensure sustainable and successful implementation.</p>
                 <Link href='/about-us'>
-                    <Button className="mt-6 font-bold">
+                    <Button className="mt-6">
                         Learn more
                     </Button>
                 </Link>
