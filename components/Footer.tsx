@@ -27,7 +27,7 @@ const Footer = () => {
             {/* Adress */}
             <div className="mt-10 px-10 sm:flex justify-between">
                 <div className="max-sm:mb-6">
-                    <div className="text-sm font-bold mb-2">Physical adress:</div>
+                    <div className="text-sm font-bold mb-2">Address:</div>
                     <p className="text-[.7rem] text-blue-700 font-medium max-w-[400px]">Room 215, SEET building, FUT-Minna Main campus, Minna-Bida road, Gidan Kwano</p>
                 </div>
                 <div className="">
