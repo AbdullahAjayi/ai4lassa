@@ -54,11 +54,11 @@ const Header = () => {
                         (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10">
                             <ul className="flex flex-col gap-3">
                                 {[
-                                    { navItem: "About", link: '#about' },
+                                    { navItem: "About Us", link: '#about' },
                                     { navItem: "Forecast", link: '#forecast' },
                                     { navItem: "Report a Case", link: '#report' },
                                     { navItem: "Resources", link: '#resources' },
-                                    { navItem: "Contact", link: '#contact' }
+                                    { navItem: "Contact Us", link: '#contact' }
                                 ].map((item, index) => (
                                     <li key={index} className="cursor-pointer font-medium text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
                                         <a href={item.link} className="block">{item.navItem}</a>
@@ -72,11 +72,11 @@ const Header = () => {
                 <nav className="mx-auto hidden md:block">
                     <ul className="flex gap-3 lg:gap-5">
                         {[
-                            { navItem: "About", link: '#about' },
+                            { navItem: "About Us", link: '#about' },
                             { navItem: "Forecast", link: '#forecast' },
                             { navItem: "Report a Case", link: '#report' },
                             { navItem: "Resources", link: '#resources' },
-                            { navItem: "Contact", link: '#contact' }
+                            { navItem: "Contact Us", link: '#contact' }
                         ].map((item, index) => (
                             <li key={index} className="font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><a href={item.link}>{item.navItem}</a></li>
                         ))}

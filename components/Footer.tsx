@@ -24,6 +24,17 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
+            {/* Adress */}
+            <div className="mt-10 px-10 sm:flex justify-between">
+                <div className="max-sm:mb-6">
+                    <div className="text-sm font-bold mb-2">Physical adress:</div>
+                    <p className="text-[.7rem] text-blue-700 font-medium max-w-[400px]">Room 215, SEET building, FUT-Minna Main campus, Minna-Bida road, Gidan Kwano</p>
+                </div>
+                <div className="">
+                    <div className="text-sm font-bold mb-2">Email:</div>
+                    <a className="text-[.7rem] text-blue-700 font-medium block" href="mailto:aidevg_24@futminna.edu.ng">aidevg_24@futminna.edu.ng</a>
+                </div>
+            </div>
             <form className="flex flex-col sm:flex-row px-10 mt-10 gap-6 sm:gap-8 items-end">
                 <div className="flex flex-col gap-3 w-full sm:max-w-[300px]">
                     <label htmlFor="email" className="text-sm font-bold">Subscribe to our newsletter</label>
