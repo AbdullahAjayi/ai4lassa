@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Section from "./Section"
+import Button from "./Button"
+import Link from "next/link"
 
 const About = () => {
     return (
@@ -11,11 +13,23 @@ const About = () => {
                     <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
                 </div>
             </h2>
-            {/* dot patterns */}
+            {/* dot patterns bg */}
             <div className="absolute -z-10 inset-0 top-36 overflow-hidden">
                 <Image src='/assets/images/dot-patterns.png' alt="dot-patterns" width={1832} height={838} />
             </div>
-            <div className="grid md:grid-cols-2 gap-y-28 md:gap-y-32 mt-16 md:mt-24 md:px-10 mb-10">
+            {/* about detail */}
+            <div className="">
+                <p className="">The Development of an AI solution User Application to Raise Early Alarm to Improve Urban Health awareness, preparedness and Quick Response to Lassa Fever Outbreaks Project (AI4Lassa) is a project funded by the Tertiary Education Trust Fund (TETFUND) under the National Research Fund (NRF) in 2024.</p>
+                <p className="mt-6"><strong>AI4Lassa</strong> is a pioneering initiative developed to address the persistent challenge of Lassa fever outbreaks in Nigeria through the power of artificial intelligence (AI). Our solution focuses on enhancing early detection capabilities, enabling rapid response, and fostering community health awareness. With a targeted approach, AI4Lassa seeks to revolutionize Nigeria’s healthcare infrastructure by empowering public health stakeholders and communities to respond more effectively to health crises. This project stands as a significant public health milestone and invites collaboration and support to ensure sustainable and successful implementation.</p>
+                <Link href='/about-us'>
+                    <Button className="mt-6">
+                        Learn more
+                    </Button>
+                </Link>
+            </div>
+            {/* ai4lassa features */}
+            <h2 className="h2 mt-12">Framework</h2>
+            <div className="grid md:grid-cols-2 gap-y-28 md:gap-y-32 mt-16 md:mt-12 md:px-10 mb-10">
                 <div className="col-start-1 relative">
                     <h3 className="h3 relative w-fit">
                         <span>Outbreak Forcasting</span>
