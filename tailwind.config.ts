@@ -36,6 +36,12 @@ const config: Config = {
         ".body-1": {
           "@apply md:text-xl": {},
         },
+        ".ol": {
+          "@apply flex flex-col gap-y-3 list-decimal ml-6 text-sm md:text-[.9rem]": {},
+        },
+        ".ul": {
+          "@apply flex flex-col gap-y-3 list-disc ml-6 text-sm md:text-[.9rem]": {},
+        },
       }
       addComponents(components)
     }),
