@@ -1,15 +1,52 @@
 "use client"
 
 import { useState } from "react";
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import SplitType from "split-type";
+
+gsap.registerPlugin(useGSAP)
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+
+    useGSAP(() => {
+        const target = new SplitType('.logo-text')
+
+        gsap.set(['.nav-pc', '.logo-text'], { opacity: 1 })
+
+        gsap.from(target.chars, {
+            x: 50,
+            // rotation: 10,
+            duration: .2,
+            stagger: .1,
+        })
+
+        gsap.from('.nav-pc', {
+            y: 20,
+            opacity: 0,
+            duration: .2,
+            stagger: .1,
+            ease: "power1.inOut"
+        })
+    })
+
+    useGSAP(() => {
+        menuOpen && gsap.from('.nav-mobile', {
+            y: 20,
+            opacity: 0,
+            duration: .2,
+            stagger: .1,
+            ease: "power1.inOut"
+        })
+    }, [menuOpen])
+
 
     return (
         <header className="px-10 py-5 fixed top-0 w-full left-0 z-10  backdrop-blur-sm">
             <div className="flex max-md:justify-between items-center">
                 <div className="font-bold">
-                    <a href="#" className="text-xl">AI4LASSA</a>
+                    <a href="#" className="logo-text opacity-0 text-xl">AI4LASSA</a>
                 </div>
 
                 <div className="md:hidden relative">
@@ -60,7 +97,7 @@ const Header = () => {
                                     { navItem: "Resources", link: '#resources' },
                                     { navItem: "Contact Us", link: '#contact' }
                                 ].map((item, index) => (
-                                    <li key={index} className="cursor-pointer font-semibold text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
+                                    <li key={index} className="nav-mobile cursor-pointer font-semibold text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
                                         <a href={item.link} className="block">{item.navItem}</a>
                                     </li>
                                 ))}
@@ -78,7 +115,7 @@ const Header = () => {
                             { navItem: "Resources", link: '#resources' },
                             { navItem: "Contact Us", link: '#contact' }
                         ].map((item, index) => (
-                            <li key={index} className="font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><a href={item.link}>{item.navItem}</a></li>
+                            <li key={index} className="nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><a href={item.link}>{item.navItem}</a></li>
                         ))}
                     </ul>
                 </nav>

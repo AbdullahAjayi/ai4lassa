@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import { ReactNode } from 'react';
+import { forwardRef } from 'react';
 
 type Props = {
     children: ReactNode
@@ -7,11 +8,11 @@ type Props = {
     id?: string
 }
 
-const Section = ({ children, className, id }: Props) => {
+const Section = forwardRef<HTMLElement, Props>(({ children, className, id }: Props, ref) => {
 
     return (
-        <section id={id} className={clsx("px-10 md:px-16 pb-10 max-w-[1500px] mx-auto", className)}>{children}</section>
+        <section ref={ref} id={id} className={clsx("px-10 md:px-16 pb-10 max-w-[1500px] mx-auto", className)}>{children}</section>
     )
 }
-
+)
 export default Section
