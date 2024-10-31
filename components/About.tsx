@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import SplitType from "split-type"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from "gsap/all"
