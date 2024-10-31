@@ -75,7 +75,6 @@ export const useParagraphAnimation = ({
         x,
         y,
         duration,
-        ease: "power2.out",
         scrollTrigger: {
           trigger: paragraph,
           start,
