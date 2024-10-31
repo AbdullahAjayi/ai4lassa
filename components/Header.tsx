@@ -11,7 +11,6 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     useGSAP(() => {
-        const logoText = document.querySelector('.logo-text')
         const target = new SplitType('.logo-text')
 
         gsap.set(['.nav-pc', '.logo-text'], { opacity: 1 })
