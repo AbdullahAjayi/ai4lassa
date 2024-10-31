@@ -84,7 +84,7 @@ export const useSlideUpAnimation = ({
           start,
           end,
           toggleActions: "play none none reverse",
-          markers: true,
+          // markers: true,
         },
       })
     })
