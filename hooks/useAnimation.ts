@@ -25,7 +25,7 @@ interface ParagraphAnimationConfig {
 }
 
 export const useCharacterAnimation = ({
-  selector = ".animate-heading",
+  selector = ".animate-character",
   start = "top 90%",
   end = "top 5%",
   duration = 1,
@@ -58,8 +58,8 @@ export const useCharacterAnimation = ({
   })
 }
 
-export const useParagraphAnimation = ({
-  selector = ".animate-paragraph",
+export const useSlideUpAnimation = ({
+  selector = ".animate-slide-up",
   start = "top 90%",
   end = "top 5%",
   duration = 1,
