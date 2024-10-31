@@ -32,7 +32,7 @@ const Hero = () => {
         ).from(
             'p', {
             opacity: 0, y: 50,
-        }
+        }, ">-=0.35"
         ).from(
             'button', {
             x: -20, opacity: 0, duration: .5,

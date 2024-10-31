@@ -20,6 +20,7 @@ const Header = () => {
         tl
             .from(target.chars, {
                 x: "200%",
+                delay: .1,
                 autoAlpha: 0,
                 stagger: 0.05,
                 ease: "power2.out",
