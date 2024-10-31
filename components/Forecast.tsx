@@ -6,7 +6,8 @@ import LinkBtn from "./LinkBtn"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
 const Forecast = () => {
-    useCharacterAnimation({ stagger: .02 })
+    useCharacterAnimation({ stagger: 0.02 })
+    useCharacterAnimation({ selector: '.animate-character-left', x: -20, stagger: 0.01 })
     useSlideUpAnimation()
 
     return (
@@ -39,7 +40,7 @@ const Forecast = () => {
                         <div className="rounded-full w-4 h-4 bg-red-500" />
                         <p className="">Affected Areas - 14 States</p>
                     </div>
-                    <div className="flex gap-3 items-center">
+                    <div className="flex gap-3 items-center animate-character-left">
                         <div className="rounded-full w-4 h-4 bg-green-500" />
                         <p className="">Unaffected Areas - 22 States</p>
                     </div>
