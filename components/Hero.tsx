@@ -13,7 +13,6 @@ import { useRef } from "react"
 gsap.registerPlugin(useGSAP)
 
 const Hero = () => {
-
     const heroSection = useRef<HTMLElement | null>(null)
 
     useGSAP(() => {
