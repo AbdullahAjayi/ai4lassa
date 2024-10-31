@@ -36,13 +36,15 @@ const Forecast = () => {
                     <LinkBtn link="#" >View Full Forecast</LinkBtn>
                 </div>
                 <div className="text-sm font-bold"> {/* Lengend */}
-                    <div className="flex gap-3 items-center animate-character">
-                        <div className="rounded-full w-4 h-4 bg-red-500" />
-                        <p className="">Affected Areas - 14 States</p>
+                    <div className="flex gap-3 items-center">
+                        <div className="rounded-full w-4 h-4 bg-red-500 flex justify-center items-center">
+                            <div className="rounded-full w-3 h-3 bg-red-700 animate-ping"></div>
+                        </div>
+                        <p className=" animate-character">Affected Areas - 14 States</p>
                     </div>
-                    <div className="flex gap-3 items-center animate-character-left">
+                    <div className="flex gap-3 items-center">
                         <div className="rounded-full w-4 h-4 bg-green-500" />
-                        <p className="">Unaffected Areas - 22 States</p>
+                        <p className="animate-character-left">Unaffected Areas - 22 States</p>
                     </div>
                 </div>
             </div>
