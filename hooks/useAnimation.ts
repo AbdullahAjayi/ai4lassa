@@ -47,11 +47,11 @@ export const useCharacterAnimation = ({
         ease: "power2.out",
         stagger,
         scrollTrigger: {
-          //   markers: true,
           trigger: element,
           start,
           end,
           toggleActions: "play none none reverse",
+          //   markers: true
         },
       })
     })
@@ -80,7 +80,7 @@ export const useParagraphAnimation = ({
           start,
           end,
           toggleActions: "play none none reverse",
-          // markers: true, // Remove in production
+          // markers: true
         },
       })
     })

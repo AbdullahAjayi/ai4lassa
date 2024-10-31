@@ -90,7 +90,7 @@ const page = () => {
                 <p>AI4Lassa is poised to set a new standard for epidemic response and public health preparedness in Nigeria and beyond. Together, we can create a safer, healthier future for all.</p>
 
                 <a href="mailto:aidevg_24@futminna.edu.ng" className="mt-6 block">
-                    <Button>Contact Us</Button>
+                    <Button className="font-normal">Contact Us</Button>
                 </a>
 
             </div>
