@@ -34,9 +34,8 @@ export const useCharacterAnimation = ({
 }: CharacterAnimationConfig = {}) => {
   useGSAP(() => {
     const elements = document.querySelectorAll(selector)
-
     elements.forEach((element) => {
-      const splitText = new SplitType(element as HTMLElement, { types: "chars" })
+      const splitText = new SplitType(element as HTMLElement, { types: "words,chars" })
 
       gsap.from(splitText.chars, {
         opacity: 0,
@@ -49,7 +48,7 @@ export const useCharacterAnimation = ({
           trigger: element,
           start,
           end,
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none reset",
           //   markers: true
         },
       })
