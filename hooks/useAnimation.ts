@@ -15,13 +15,12 @@ interface CharacterAnimationConfig {
   y?: number
 }
 
-interface ParagraphAnimationConfig {
+interface SlideUpAnimationConfig {
   selector?: string
   start?: string
   end?: string
   duration?: number
   y?: number
-  x?: number
 }
 
 export const useCharacterAnimation = ({
@@ -30,7 +29,7 @@ export const useCharacterAnimation = ({
   end = "top 5%",
   duration = 1,
   stagger = 0.05,
-  x = 0,
+  x = 30,
   y = 0,
 }: CharacterAnimationConfig = {}) => {
   useGSAP(() => {
@@ -63,24 +62,29 @@ export const useSlideUpAnimation = ({
   start = "top 90%",
   end = "top 5%",
   duration = 1,
-  x = 0,
   y = 30,
-}: ParagraphAnimationConfig = {}) => {
+}: SlideUpAnimationConfig = {}) => {
   useGSAP(() => {
-    const paragraphs = document.querySelectorAll(selector)
+    const elements = document.querySelectorAll(selector)
 
-    paragraphs.forEach((paragraph) => {
-      gsap.from(paragraph, {
+    elements.forEach((element) => {
+      // Set initial state
+      gsap.set(element, {
         opacity: 0,
-        x,
-        y,
+        y: y,
+      })
+
+      // Create the animation
+      gsap.to(element, {
+        opacity: 1,
+        y: 0,
         duration,
         scrollTrigger: {
-          trigger: paragraph,
+          trigger: element,
           start,
           end,
           toggleActions: "play none none reverse",
-          // markers: true
+          markers: true,
         },
       })
     })
