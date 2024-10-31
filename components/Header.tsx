@@ -11,16 +11,23 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     useGSAP(() => {
+        const logoText = document.querySelector('.logo-text')
         const target = new SplitType('.logo-text')
 
         gsap.set(['.nav-pc', '.logo-text'], { opacity: 1 })
 
-        gsap.from(target.chars, {
-            x: 50,
-            // rotation: 10,
-            duration: .2,
-            stagger: .1,
-        })
+        const logoTl = gsap.timeline()
+
+        logoTl.from(target.chars, {
+            x: "200%",
+            autoAlpha: 0,
+            stagger: .05,
+            ease: "expo.out"
+        }).from('.logo-text', {
+            autoAlpha: 0,
+            x: "15%",
+            duration: logoText?.textContent != null ? 0.05 * logoText.textContent.length * 2 : ''
+        }, "<")
 
         gsap.from('.nav-pc', {
             y: 20,
@@ -32,13 +39,15 @@ const Header = () => {
     })
 
     useGSAP(() => {
-        menuOpen && gsap.from('.nav-mobile', {
-            y: 20,
-            opacity: 0,
-            duration: .2,
-            stagger: .1,
-            ease: "power1.inOut"
-        })
+        if (menuOpen) {
+            gsap.from('.nav-mobile', {
+                y: 20,
+                opacity: 0,
+                duration: .2,
+                stagger: .1,
+                ease: "power1.inOut"
+            })
+        }
     }, [menuOpen])
 
 
