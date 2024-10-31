@@ -27,9 +27,9 @@ const Header = () => {
         }).from('.nav-pc', {
             y: 20,
             opacity: 0,
-            duration: 0.3,
-            stagger: 0.05,
-            ease: "power2.out"
+            stagger: 0.1,
+            ease: "power2.out",
+            duration: 0.8,
         }, "<")
     })
 
