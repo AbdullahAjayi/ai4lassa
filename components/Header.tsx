@@ -22,12 +22,9 @@ const Header = () => {
             x: "200%",
             autoAlpha: 0,
             stagger: .05,
-            ease: "expo.out"
-        }).from('.logo-text', {
-            autoAlpha: 0,
-            x: "15%",
-            duration: logoText?.textContent != null ? 0.05 * logoText.textContent.length * 2 : ''
-        }, "<")
+            ease: "power2.out",
+            duration: 1
+        })
 
         gsap.from('.nav-pc', {
             y: 20,
