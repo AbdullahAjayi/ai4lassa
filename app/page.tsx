@@ -15,7 +15,13 @@ export default function Home() {
 
   useEffect(() => {
     const loadDomContent = async () => {
-      await Promise.all([document.addEventListener('DOMContentLoaded', () => { })])
+      await new Promise<void>(resolve => {
+        if (document.readyState === 'interactive' || document.readyState === 'complete') {
+          resolve();
+        } else {
+          document.addEventListener('DOMContentLoaded', () => resolve());
+        }
+      });
       setIsLoading(false)
     }
 
