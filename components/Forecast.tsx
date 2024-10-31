@@ -31,7 +31,9 @@ const Forecast = () => {
                 <Image src='/assets/images/forecast_map.png' alt='forecase map' width={1241} height={1241} className="md:w-1/2" />
             </div>
             <div className="flex flex-wrap-reverse gap-6 justify-between items-end">
-                <LinkBtn link="#" className="">View Full Forecast</LinkBtn>
+                <div className="animate-slide-up">
+                    <LinkBtn link="#" >View Full Forecast</LinkBtn>
+                </div>
                 <div className="text-sm font-bold"> {/* Lengend */}
                     <div className="flex gap-3 items-center animate-character">
                         <div className="rounded-full w-4 h-4 bg-red-500" />
