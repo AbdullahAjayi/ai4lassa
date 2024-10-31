@@ -17,22 +17,20 @@ const Header = () => {
 
         const tl = gsap.timeline()
 
-        tl
-            .from(target.chars, {
-                x: "200%",
-                delay: .1,
-                autoAlpha: 0,
-                stagger: 0.05,
-                ease: "power2.out",
-                duration: 0.8
-            })
-            .from('.nav-pc', {
-                y: 20,
-                opacity: 0,
-                duration: 0.3,
-                stagger: 0.05,
-                ease: "power2.out"
-            }, "<")
+        tl.from(target.chars, {
+            x: "200%",
+            opacity: 0,
+            stagger: 0.05,
+            ease: "power2.out",
+            duration: 0.8,
+
+        }).from('.nav-pc', {
+            y: 20,
+            opacity: 0,
+            duration: 0.3,
+            stagger: 0.05,
+            ease: "power2.out"
+        }, "<")
     })
 
     useGSAP(() => {
@@ -52,7 +50,7 @@ const Header = () => {
         <header className="px-10 py-5 fixed top-0 w-full left-0 z-10  backdrop-blur-sm">
             <div className="flex max-md:justify-between items-center">
                 <div className="font-bold">
-                    <a href="#" className="logo-text opacity-0 text-xl">AI4LASSA</a>
+                    <a href="#" className="logo-text text-xl">AI4LASSA</a>
                 </div>
 
                 <div className="md:hidden relative">

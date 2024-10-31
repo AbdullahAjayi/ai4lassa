@@ -25,7 +25,7 @@ const Report = () => {
                     <label htmlFor="name" className="text-sm font-bold animate-character">Name:</label>
                     <input type="text" id="name" name="name" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none animate-slide-up" placeholder="e.g. Kunle Galadima Eze" required />
                     <label htmlFor="location" className="text-sm font-bold animate-character">Location:</label>
-                    <select id="location" name="location" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none animate-slide-up" required>
+                    <select id="location" name="location" className="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none animate-slide-up appearance-none" required>
                         <option value="">Select a state</option>
                         <option value="Abia">Abia</option>
                         <option value="Adamawa">Adamawa</option>
