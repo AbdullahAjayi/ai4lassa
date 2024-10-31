@@ -6,8 +6,8 @@ import Section from "./Section"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
 const Report = () => {
-    useCharacterAnimation({ stagger: 0.01 })
-    useSlideUpAnimation()
+    useCharacterAnimation({ stagger: 0.02 })
+    useSlideUpAnimation({ y: 50 })
 
     return (
         <Section id="report" className="pt-20">

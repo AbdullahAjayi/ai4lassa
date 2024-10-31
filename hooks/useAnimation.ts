@@ -49,7 +49,7 @@ export const useCharacterAnimation = ({
           start,
           end,
           toggleActions: "play none none reset",
-          //   markers: true
+          // markers: true,
         },
       })
     })
@@ -67,25 +67,25 @@ export const useSlideUpAnimation = ({
     const elements = document.querySelectorAll(selector)
 
     elements.forEach((element) => {
-      // Set initial state
-      gsap.set(element, {
-        opacity: 0,
-        y: y,
-      })
-
-      // Create the animation
-      gsap.to(element, {
-        opacity: 1,
-        y: 0,
-        duration,
-        scrollTrigger: {
-          trigger: element,
-          start,
-          end,
-          toggleActions: "play none none reverse",
-          // markers: true,
+      gsap.fromTo(
+        element,
+        {
+          opacity: 0,
+          y: y,
         },
-      })
+        {
+          opacity: 1,
+          y: 0,
+          duration,
+          scrollTrigger: {
+            trigger: element,
+            start,
+            end,
+            toggleActions: "play none none reverse",
+            // markers: true,
+          },
+        }
+      )
     })
   })
 }
