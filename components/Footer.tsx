@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer id="contact" className="pt-20 max-w-[1500px] mx-auto">
             <div className="px-10 sm:flex justify-between">
-                <div className="">
+                <div>
                     <small className="font-semibold mb-6 sm:mb-10 block animate-character">Quick navigate our pages</small>
                     <ul className="text-lg font-bold">
                         <li className="animate-slide-up"><Link href="about-us">About Us</Link></li>

@@ -7,7 +7,6 @@ import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation
 
 const Forecast = () => {
     useCharacterAnimation({ stagger: 0.02 })
-    useCharacterAnimation({ selector: '.animate-character-left', x: -20, stagger: 0.01 })
     useSlideUpAnimation()
 
     return (
@@ -25,7 +24,7 @@ const Forecast = () => {
                 <span className="animate-character">Current Forecast for LASSA Fever Outbreaks</span>
                 {/* rat image */}
                 <div className="absolute top-0 -left-4 -translate-y-2/3">
-                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
+                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} />
                 </div>
             </h2>
             <div className="flex justify-center">
@@ -40,11 +39,11 @@ const Forecast = () => {
                         <div className="rounded-full w-4 h-4 bg-red-500 flex justify-center items-center">
                             <div className="rounded-full w-3 h-3 bg-red-700 animate-ping"></div>
                         </div>
-                        <p className=" animate-character">Affected Areas - 14 States</p>
+                        <p className="animate-character">Affected Areas - 14 States</p>
                     </div>
                     <div className="flex gap-3 items-center">
                         <div className="rounded-full w-4 h-4 bg-green-500" />
-                        <p className="animate-character-left">Unaffected Areas - 22 States</p>
+                        <p>Unaffected Areas - 22 States</p>
                     </div>
                 </div>
             </div>

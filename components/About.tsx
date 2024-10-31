@@ -22,7 +22,7 @@ const About = () => {
                 <span className="animate-character">About AI4Lassa</span>
                 {/* rat image */}
                 <div className="absolute top-0 -left-4 -translate-y-2/3">
-                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
+                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} />
                 </div>
             </h2>
             {/* dot patterns bg */}

@@ -16,7 +16,7 @@ const Report = () => {
                 </span>
                 {/* rat image */}
                 <div className="absolute top-0 -left-4 -translate-y-2/3">
-                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} className="" />
+                    <Image src='/assets/images/rat.png' alt="rat-image" width={134} height={134} />
                 </div>
             </h2>
             <p className="mt-8 max-w-[550px] animate-slide-up">If you or someone you know is showing symptoms of LASSA fever, don't wait. Report it now to local health authorities</p>
