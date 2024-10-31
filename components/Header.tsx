@@ -97,7 +97,7 @@ const Header = () => {
                     </style>
                     {/* Nav for mobile */}
                     {menuOpen &&
-                        (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10">
+                        (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10 pb-3">
                             <ul className="flex flex-col gap">
                                 {[
                                     { navItem: "About Us", link: '#about' },
