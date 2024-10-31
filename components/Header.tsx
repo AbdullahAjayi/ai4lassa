@@ -15,23 +15,23 @@ const Header = () => {
 
         gsap.set(['.nav-pc', '.logo-text'], { opacity: 1 })
 
-        const logoTl = gsap.timeline()
+        const tl = gsap.timeline()
 
-        logoTl.from(target.chars, {
-            x: "200%",
-            autoAlpha: 0,
-            stagger: .05,
-            ease: "power2.out",
-            duration: 1
-        })
-
-        gsap.from('.nav-pc', {
-            y: 20,
-            opacity: 0,
-            duration: .2,
-            stagger: .1,
-            ease: "power1.inOut"
-        })
+        tl
+            .from(target.chars, {
+                x: "200%",
+                autoAlpha: 0,
+                stagger: 0.05,
+                ease: "power2.out",
+                duration: 0.8
+            })
+            .from('.nav-pc', {
+                y: 20,
+                opacity: 0,
+                duration: 0.3,
+                stagger: 0.05,
+                ease: "power2.out"
+            }, "<")
     })
 
     useGSAP(() => {
