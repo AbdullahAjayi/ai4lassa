@@ -1,7 +1,5 @@
 "use client"
 
-import Link from "next/link"
-import Button from "./Button"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
 const Footer = () => {
