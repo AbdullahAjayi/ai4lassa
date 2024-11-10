@@ -48,10 +48,10 @@ const Header = () => {
 
 
     return (
-        <header className="px-10 py-5 fixed top-0 w-full left-0 z-10  backdrop-blur-sm">
+        <header className="px-10 py-5 fixed top-0 w-full left-0 backdrop-blur-sm z-[100000]">
             <div className="flex max-md:justify-between items-center">
                 <div className="font-bold">
-                    <a href="#" className="logo-text text-xl">AI4LASSA</a>
+                    <Link href="/" className="logo-text text-xl">AI4LASSA</Link>
                 </div>
 
                 <div className="md:hidden relative">

@@ -60,7 +60,7 @@ const page = () => {
     ];
 
     return (
-        <Section className="min-h-screen py-16">
+        <Section className="min-h-screen py-16 pt-24">
             {/* Header Section */}
             <div className="mx-auto text-center mb-16">
                 <h1 className="h1 text-4xl">Our Team</h1>

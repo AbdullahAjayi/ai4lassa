@@ -4,7 +4,7 @@ import Section from '@/components/Section'
 
 const page = () => {
     return (
-        <Section className='pt-16 min-h-screen flex justify-center items-center'>
+        <Section className='pt-24 min-h-screen flex justify-center items-center'>
             <div>
                 <h1 className='h1 text-center'>Resources</h1>
                 <Image

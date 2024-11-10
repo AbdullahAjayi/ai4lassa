@@ -10,9 +10,9 @@ import LinkBtn from "@/components/LinkBtn";
 
 const page = () => {
     return (
-        <Section className="pt-32 lg:pt-20 pb-20">
+        <Section className="pt-48 pb-20">
             {/* Content nav panel */}
-            <div className="page-nav-panel fixed top-0 max-lg:left-0 lg:right-0 max-lg:py-4 max-lg:w-screen px-6 lg:h-screen lg:w-1/4 lg:pt-20 bg-appBg z-50">
+            <div className="page-nav-panel fixed top-0 max-lg:top-16 max-lg:left-0 lg:right-0 max-lg:py-4 max-lg:w-screen px-6 lg:h-screen lg:w-1/4 lg:pt-20 bg-appBg z-50">
                 <div className="hidden lg:block text-sm font-bold mb-6">On this page</div>
                 <nav className="lg:border-l lg:pl-3 lg:py-2">
                     <ul className="flex lg:flex-col flex-nowrap whitespace-nowrap gap-4 text-xs font-medium max-lg:overflow-x-scroll max-lg:pb-1">

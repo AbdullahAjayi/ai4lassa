@@ -10,7 +10,7 @@ const Forecast = () => {
     useSlideUpAnimation()
 
     return (
-        <Section id="forecast" className="relative pt-20 md:pt-40">
+        <Section className="relative pt-40">
             <div
                 style={{
                     backgroundImage: `url('/assets/images/mapbg.png')`,

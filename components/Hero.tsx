@@ -58,7 +58,7 @@ const Hero = () => {
     }, { scope: heroSection, dependencies: [] })
 
     return (
-        <Section ref={heroSection} id='#' className=" opacity-0 pt-24 relative min-h-screen flex items-center overflow-hidden">
+        <Section ref={heroSection} id='#' className="opacity-0 pt-24 relative min-h-screen flex items-center overflow-hidden">
             {/* Hero Bg Image (for desktop) */}
             <div className="bg-image absolute hidden md:block inset-0 w-full h-full pointer-events-none">
                 <Image priority width={1512} height={1065} className="w-full h-full object-cover object-right-bottom opacity-100" src='/assets/images/medical.png' alt="Hero image" />

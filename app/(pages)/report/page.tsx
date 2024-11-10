@@ -11,7 +11,7 @@ const Report = () => {
     useSlideUpAnimation({ y: 50 })
 
     return (
-        <Section id="report" className="pt-20">
+        <Section className="pt-40">
             <h2 className="h2 relative">
                 <span className="animate-character">Have You Witnessed or Experienced Symptoms?
                 </span>

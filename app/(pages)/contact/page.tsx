@@ -12,7 +12,7 @@ const Footer = () => {
     useSlideUpAnimation()
 
     return (
-        <main id="contact" className="pt-6 max-w-[1500px] mx-auto">
+        <main className="pt-24 max-w-[1500px] mx-auto">
             <h1 className="px-10 text-3xl md:text-4xl font-bold mb-10">Reach out to us via email... <br /> or through social media</h1>
             <div className="px-10 sm:flex justify-between">
                 <div>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col sm:flex-row px-10 mt-10 gap-6 sm:gap-8 items-end">
+            <form className="flex flex-col sm:flex-row px-10 my-10 gap-6 sm:gap-8 items-end">
                 <div className="flex flex-col gap-3 w-full sm:max-w-[300px]">
                     <label htmlFor="email" className="text-sm font-bold animate-character">Subscribe to our newsletter</label>
                     <input type="email" id="email" name="email" className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none animate-slide-up" placeholder="e.g. kunlegaladima@gmail.com" required />
@@ -57,9 +57,6 @@ const Footer = () => {
                     <span>Subscribe</span> <FaAddressCard />
                 </Button>
             </form>
-            <div className="border-t border-black py-6 px-10 mt-10 flex justify-center items-center font-semibold">
-                <small>© 2024 AI4LASSA Fever. All rights reserved.</small>
-            </div>
         </main>
     )
 }
