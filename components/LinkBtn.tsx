@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import Link from "next/link"
 import { ReactNode } from "react"
 
 type Props = {
@@ -10,7 +11,7 @@ type Props = {
 
 const LinkBtn = ({ children, link, className }: Props) => {
     return (
-        <a href={link} className={clsx("underline hover:no-underline transition-all duration-300 block w-fit mt-6", className)}>{children}</a>
+        <Link href={link} className={clsx("underline hover:no-underline transition-all duration-300 block w-fit mt-6", className)}>{children}</Link>
     )
 }
 
