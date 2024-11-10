@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Report from "@/components/Report";
 import Resources from "@/components/Resources";
 import Loader from "@/components/Loader";
 
@@ -38,7 +37,6 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Report />
       <Resources />
       <Footer />
     </>

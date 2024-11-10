@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-import Section from "./Section"
+import Section from "@/components/Section"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
 const Report = () => {
