@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import Section from "./Section"
-import LinkBtn from "./LinkBtn"
+import Section from "@/components/Section"
+import LinkBtn from "@/components/LinkBtn"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
 const Forecast = () => {

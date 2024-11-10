@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 import About from "@/components/About";
 import Footer from "@/components/Footer";
-import Forecast from "@/components/Forecast";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Report from "@/components/Report";
@@ -39,7 +38,6 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Forecast />
       <Report />
       <Resources />
       <Footer />
