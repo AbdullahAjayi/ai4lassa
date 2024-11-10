@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         appBg: "#F7FBF1",
         btn: "#3C6939",
+        outline: "#3C6939",
       },
     },
   },
