@@ -11,7 +11,7 @@ type Props = {
 
 const LinkBtn = ({ children, link, className }: Props) => {
     return (
-        <Link href={link} className={clsx("underline hover:no-underline transition-all duration-300 block w-fit mt-6", className)}>{children}</Link>
+        <Link href={link} className={clsx("text-btn font-semibold underline hover:text-green-600 transition-color duration-300 block w-fit mt-6", className)}>{children}</Link>
     )
 }
 
