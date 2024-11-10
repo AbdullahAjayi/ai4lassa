@@ -110,7 +110,7 @@ const Contact = () => {
             {/* Social Handles + Adress */}
             <div>
                 <div>
-                    <small className="font-semibold mb-6 block animate-character">Or Contact us on our social handles</small>
+                    <small className="font-semibold mb-6 block animate-character">Or Contact us through our social handles</small>
                     <ul className="text-lg font-bold">
                         <li>Facebook</li>
                         <li>Instagram</li>
