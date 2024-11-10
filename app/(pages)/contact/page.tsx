@@ -79,7 +79,7 @@ const Contact = () => {
             <div ref={formCardRef}
                 onMouseMove={(e) => isDesktop && handleMouseMove(e, formCardRef)}
                 onMouseLeave={() => isDesktop && handleMouseLeave(formCardRef)}
-                className="contact-section mb-32 backdrop-blur-md bg-white rounded-xl shadow-md p-4 border">
+                className="contact-section mb-16 md:mb-32 backdrop-blur-md bg-white rounded-xl shadow-md p-4 border">
                 <form ref={formRef}
                     onSubmit={sendEmail} className="flex flex-col gap-4 placeholder:text-gray-600">
                     <input
