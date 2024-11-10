@@ -10,7 +10,7 @@ import Button from "@/components/Button"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
-const page = () => {
+const Contact = () => {
     useCharacterAnimation({ stagger: 0.02 })
     useSlideUpAnimation()
 
@@ -138,4 +138,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Contact
