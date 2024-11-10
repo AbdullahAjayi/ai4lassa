@@ -67,12 +67,12 @@ const Hero = () => {
                             <h1 className="h1">Together, We Can Stop <span className="text-green-800">LASSA Fever!</span></h1>
                             <p className="body-1 md:max-w-[80%] max-md:font-medium">Stay informed about LASA fever outbreaks, take action by reporting cases, and help prevent the spread of the disease</p>
                         </div>
-                        <div>
+                        <div className="md:-translate-y-8">
                             <a href="#forecast">
                                 <Button>Check Outbreak Forecast</Button>
                             </a>
                             <div className="link-btn">
-                                <LinkBtn link="mailto:aidevg_24@futminna.edu.ng">Report a Case</LinkBtn>
+                                <LinkBtn link="report">Report a Case</LinkBtn>
                             </div>
                         </div>
                     </div>
