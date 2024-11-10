@@ -53,7 +53,8 @@ const Footer = () => {
                     <label htmlFor="email" className="text-sm font-bold animate-character">Subscribe to our newsletter</label>
                     <input type="email" id="email" name="email" className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none animate-slide-up" placeholder="e.g. kunlegaladima@gmail.com" required />
                 </div>
-                <Button className="max-sm:w-full min-w-[200px] animate-character flex items-center justify-center"><span className="mr-3">Subscribe</span> <FaAddressCard />
+                <Button className="max-sm:w-full min-w-[200px] animate-character flex items-center justify-center gap-3">
+                    <span>Subscribe</span> <FaAddressCard />
                 </Button>
             </form>
             <div className="border-t border-black py-6 px-10 mt-10 flex justify-center items-center font-semibold">

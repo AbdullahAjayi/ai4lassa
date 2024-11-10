@@ -1,14 +1,18 @@
 "use client"
 
+import { useRef } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import SplitType from 'split-type'
+import { IoOpenOutline } from "react-icons/io5";
+import { FaHandHoldingHeart } from "react-icons/fa6";
+
 
 import Section from "./Section"
 import Button from "./Button"
 import LinkBtn from "./LinkBtn"
-import { useRef } from "react"
 
 gsap.registerPlugin(useGSAP)
 
@@ -68,11 +72,15 @@ const Hero = () => {
                             <p className="body-1 md:max-w-[80%] max-md:font-medium">Stay informed about LASA fever outbreaks, take action by reporting cases, and help prevent the spread of the disease</p>
                         </div>
                         <div className="md:-translate-y-8">
-                            <a href="#forecast">
-                                <Button>Check Outbreak Forecast</Button>
-                            </a>
+                            <Link href="forecast">
+                                <Button className="flex justify-center items-center gap-3">
+                                    <span>Check Outbreak Forecast</span> <IoOpenOutline />
+                                </Button>
+                            </Link>
                             <div className="link-btn">
-                                <LinkBtn link="report">Report a Case</LinkBtn>
+                                <LinkBtn link="report" className="flex justify-center items-center gap-2">
+                                    <span>Report a Case</span> <FaHandHoldingHeart />
+                                </LinkBtn>
                             </div>
                         </div>
                     </div>

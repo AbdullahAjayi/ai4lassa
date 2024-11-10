@@ -1,8 +1,10 @@
 import Image from "next/image"
+import { IoMdMail } from "react-icons/io";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+
 
 import Section from "@/components/Section"
 import Button from "@/components/Button"
-import { IoMdMail } from "react-icons/io";
 import LinkBtn from "@/components/LinkBtn";
 
 
@@ -92,15 +94,16 @@ const page = () => {
 
                 <h3 id="team-members" className="h3 mt-12">Our Team</h3>
                 <p>Our team is made up of dedicated researchers, developers, and public health experts from the Federal University of Technology Minna (FUTMinna) and partner institutions. Together, we bring diverse expertise in artificial intelligence, epidemiology, software development, and public health policy to tackle the challenges of Lassa fever surveillance and control.</p>
-                <LinkBtn link='team'>Meet our team members</LinkBtn>
+                <LinkBtn link='team' className="flex justify-center items-center gap-1">
+                    <span>Meet our team members</span> <IoShieldCheckmarkOutline />
+                </LinkBtn>
 
                 <h3 id="make-a-difference" className="h3 mt-12">Join Us in Making a Difference</h3>
                 <p>AI4Lassa is poised to set a new standard for epidemic response and public health preparedness in Nigeria and beyond. Together, we can create a safer, healthier future for all.</p>
 
                 <a href="mailto:aidevg_24@futminna.edu.ng" className="mt-6 block">
-                    <Button className="font-normal flex items-center">
-                        <span className="mr-3">Contact Us</span>
-                        <IoMdMail className="text-xl" />
+                    <Button className="font-normal flex items-center gap-3">
+                        <span>Contact Us</span> <IoMdMail className="text-xl" />
                     </Button>
                 </a>
             </div>
