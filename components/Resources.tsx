@@ -13,7 +13,7 @@ const Resources = () => {
     useCharacterAnimation()
 
     return (
-        <Section id="resources" className="pt-20 bg-black/10 min-h-screen flex items-center">
+        <Section className="pt-20 bg-black/10 min-h-screen flex items-center">
             <div>
                 <h2 className="h2 relative">
                     <span className="animate-character">Why Curbing LASSA Fever Is Critical</span>
