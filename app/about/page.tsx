@@ -2,8 +2,8 @@ import Image from "next/image"
 
 import Section from "@/components/Section"
 import Button from "@/components/Button"
-import { FaLocationArrow } from "react-icons/fa6"
 import { IoMdMail } from "react-icons/io";
+import LinkBtn from "@/components/LinkBtn";
 
 
 const page = () => {
@@ -19,6 +19,7 @@ const page = () => {
                         <li><a href="#objectives">Objectives</a></li>
                         <li><a href="#research-framework">Research Framework</a></li>
                         <li><a href="#research-outputs-and-outcomes">Research Outputs and Outcomes</a></li>
+                        <li><a href="#team-members">Team Members</a></li>
                         <li><a href="#make-a-difference">Join us in making a difference</a></li>
                     </ul>
                 </nav>
@@ -88,6 +89,10 @@ const page = () => {
                     <li><strong>Educational Development</strong>: The AI4Lassa framework supports research and education on Lassa fever, providing invaluable resources for academic and community awareness.</li>
                 </ul>
                 <p className="mt-6">In collaboration with the Nigerian health sector, public institutions, academic entities, and other stakeholders, AI4Lassa is committed to developing reliable, efficient, and responsive systems for epidemic alerts and intervention. Through these efforts, we aim to significantly enhance Nigeria’s public health resilience, enabling a proactive and well-prepared approach to epidemic management.</p>
+
+                <h3 id="team-members" className="h3 mt-12">Our Team</h3>
+                <p>Our team is made up of dedicated researchers, developers, and public health experts from the Federal University of Technology Minna (FUTMinna) and partner institutions. Together, we bring diverse expertise in artificial intelligence, epidemiology, software development, and public health policy to tackle the challenges of Lassa fever surveillance and control.</p>
+                <LinkBtn link='team'>Meet our team members</LinkBtn>
 
                 <h3 id="make-a-difference" className="h3 mt-12">Join Us in Making a Difference</h3>
                 <p>AI4Lassa is poised to set a new standard for epidemic response and public health preparedness in Nigeria and beyond. Together, we can create a safer, healthier future for all.</p>
