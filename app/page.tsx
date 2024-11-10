@@ -5,7 +5,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Resources from "@/components/Resources";
+import WhyTacklingLassa from "@/components/WhyTacklingLassa";
 import Loader from "@/components/Loader";
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Resources />
+      <WhyTacklingLassa />
       <Footer />
     </>
   )

@@ -8,7 +8,7 @@ import Section from "./Section"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 import Button from "./Button"
 
-const Resources = () => {
+const WhyTacklingLassa = () => {
     useSlideUpAnimation()
     useCharacterAnimation()
 
@@ -34,4 +34,4 @@ const Resources = () => {
     )
 }
 
-export default Resources
+export default WhyTacklingLassa
