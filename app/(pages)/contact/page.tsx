@@ -73,13 +73,13 @@ const page = () => {
     };
 
     return (
-        <main className="pt-24 max-w-[1500px] mx-auto px-10">
+        <main className="pt-24 max-w-[600px] mx-auto px-10">
             <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">Send us a mail <IoMdMail className="inline-block" /></h1>
             {/* Contact Form */}
             <div ref={formCardRef}
                 onMouseMove={(e) => isDesktop && handleMouseMove(e, formCardRef)}
                 onMouseLeave={() => isDesktop && handleMouseLeave(formCardRef)}
-                className="contact-section max-w-[600px] m-auto mb-32 backdrop-blur-md bg-white rounded-xl shadow-md p-4 border">
+                className="contact-section mb-32 backdrop-blur-md bg-white rounded-xl shadow-md p-4 border">
                 <form ref={formRef}
                     onSubmit={sendEmail} className="flex flex-col gap-4 placeholder:text-gray-600">
                     <input
@@ -108,7 +108,7 @@ const page = () => {
                 </form>
             </div>
             {/* Social Handles + Adress */}
-            <div className="max-w-[600px] mx-auto">
+            <div>
                 <div>
                     <small className="font-semibold mb-6 block animate-character">Or Contact us on our social handles</small>
                     <ul className="text-lg font-bold">
@@ -125,7 +125,7 @@ const page = () => {
                 </div>
             </div>
             {/* Subscription Form */}
-            <form className="flex flex-col sm:flex-row my-10 gap-6 sm:gap-8 items-end max-w-[600px] mx-auto">
+            <form className="flex flex-col sm:flex-row my-10 gap-6 sm:gap-8 items-end">
                 <div className="flex flex-col gap-3 w-full sm:max-w-[300px]">
                     <label htmlFor="email" className="text-sm font-bold animate-character">Subscribe to our newsletter</label>
                     <input type="email" id="email" name="email" className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none animate-slide-up" placeholder="e.g. kunlegaladima@gmail.com" required />
