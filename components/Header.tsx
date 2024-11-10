@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import Link from "next/link";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import SplitType from "split-type";
@@ -95,14 +96,14 @@ const Header = () => {
                         (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10 pb-3">
                             <ul className="flex flex-col gap">
                                 {[
-                                    { navItem: "About Us", link: '#about' },
-                                    { navItem: "Forecast", link: '#forecast' },
-                                    { navItem: "Report a Case", link: '#report' },
-                                    { navItem: "Resources", link: '#resources' },
-                                    { navItem: "Contact Us", link: '#contact' }
+                                    { navItem: "About Us", link: 'about' },
+                                    { navItem: "Forecast", link: 'forecast' },
+                                    { navItem: "Report a Case", link: 'report' },
+                                    { navItem: "Resources", link: 'resources' },
+                                    { navItem: "Contact Us", link: 'contact' }
                                 ].map((item, index) => (
                                     <li key={index} className="nav-mobile cursor-pointer font-semibold text-sm hover:bg-btn hover:text-white p-3 px-4 transition-colors duration-300">
-                                        <a href={item.link} className="block">{item.navItem}</a>
+                                        <Link href={item.link} className="block">{item.navItem}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -113,13 +114,13 @@ const Header = () => {
                 <nav className="mx-auto hidden md:block">
                     <ul className="flex gap-3 lg:gap-5">
                         {[
-                            { navItem: "About Us", link: '#about' },
-                            { navItem: "Forecast", link: '#forecast' },
-                            { navItem: "Report a Case", link: '#report' },
-                            { navItem: "Resources", link: '#resources' },
-                            { navItem: "Contact Us", link: '#contact' }
+                            { navItem: "About Us", link: 'about' },
+                            { navItem: "Forecast", link: 'forecast' },
+                            { navItem: "Report a Case", link: 'report' },
+                            { navItem: "Resources", link: 'resources' },
+                            { navItem: "Contact Us", link: 'contact' }
                         ].map((item, index) => (
-                            <li key={index} className="nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><a href={item.link}>{item.navItem}</a></li>
+                            <li key={index} className="nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><Link href={item.link}>{item.navItem}</Link></li>
                         ))}
                     </ul>
                 </nav>
