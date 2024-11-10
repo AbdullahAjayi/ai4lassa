@@ -1,6 +1,8 @@
 "use client"
 
 import Link from "next/link"
+import { FaAddressCard } from "react-icons/fa6";
+
 import Button from "@/components/Button"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
@@ -10,25 +12,26 @@ const Footer = () => {
     useSlideUpAnimation()
 
     return (
-        <main id="contact" className="pt-20 max-w-[1500px] mx-auto">
+        <main id="contact" className="pt-6 max-w-[1500px] mx-auto">
+            <h1 className="px-10 text-3xl md:text-4xl font-bold mb-10">Reach out to us via email... <br /> or through social media</h1>
             <div className="px-10 sm:flex justify-between">
                 <div>
                     <small className="font-semibold mb-6 sm:mb-10 block animate-character">Quick navigate our pages</small>
                     <ul className="text-lg font-bold">
-                        <li className="animate-slide-up"><Link href="about-us">About Us</Link></li>
-                        <li className="animate-slide-up"><a href="#forecast">Forecast</a></li>
-                        <li className="animate-slide-up"><a href="#report">Report a Case</a></li>
-                        <li className="animate-slide-up"><a href="#resources">Resources</a></li>
-                        <li className="animate-slide-up"><a href="#contact">Contact Us</a></li>
+                        <li><Link href="about">About Us</Link></li>
+                        <li><Link href="forecast">Forecast</Link></li>
+                        <li><Link href="report">Report a Case</Link></li>
+                        <li><Link href="resources">Resources</Link></li>
+                        <li><Link href="contact">Contact Us</Link></li>
                     </ul>
                 </div>
                 <div className="max-sm:mt-8">
                     <small className="font-semibold mb-6 sm:mb-10 block animate-character-left">Contact us on our social handles</small>
                     <ul className="text-lg font-bold sm:text-right">
-                        <li className="animate-slide-up">Facebook</li>
-                        <li className="animate-slide-up">X</li>
-                        <li className="animate-slide-up">Instagram</li>
-                        <li className="animate-slide-up">LinkedIn</li>
+                        <li>Facebook</li>
+                        <li>X</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
                     </ul>
                 </div>
             </div>
@@ -50,7 +53,8 @@ const Footer = () => {
                     <label htmlFor="email" className="text-sm font-bold animate-character">Subscribe to our newsletter</label>
                     <input type="email" id="email" name="email" className="border-2 border-gray-300 bg-white h-10 px-5 rounded-lg text-sm focus:outline-none animate-slide-up" placeholder="e.g. kunlegaladima@gmail.com" required />
                 </div>
-                <Button className="max-sm:w-full min-w-[200px] animate-character">Subscribe</Button>
+                <Button className="max-sm:w-full min-w-[200px] animate-character flex items-center justify-center"><span className="mr-3">Subscribe</span> <FaAddressCard />
+                </Button>
             </form>
             <div className="border-t border-black py-6 px-10 mt-10 flex justify-center items-center font-semibold">
                 <small>© 2024 AI4LASSA Fever. All rights reserved.</small>
