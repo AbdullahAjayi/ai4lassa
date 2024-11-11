@@ -7,7 +7,7 @@ const page = () => {
             name: "UMARU, Emmanuel Tanko",
             role: "Founder & CEO",
             image: "/assets/images/profiles/Picture1.png",
-            bio: "Associate Professor, researcher, and consultant in Urban Planning and Climate Change.",
+            bio: "Associate Professor | Researcher | Deputy Director @ WASCAL.",
             details: ""
         },
         {
@@ -86,9 +86,7 @@ const page = () => {
                         </div>
                         <h3 className="text-xl font-semibold text-center">{member.name}</h3>
                         <p className="text-gray-600 text-center mb-2">{member.role}</p>
-                        <p className="text-gray-500 text-center text-sm">
-                            {member.bio.length > 300 ? `${member.bio.substring(0, 300)}...` : member.bio}
-                        </p>
+                        <p className="text-gray-500 text-center text-sm">{member.bio}</p>
                     </div>
                 ))}
             </div>
