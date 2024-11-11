@@ -4,52 +4,53 @@ import Image from "next/image";
 const page = () => {
     const teamMembers = [
         {
-            name: "John Doe",
+            name: "UMARU, Emmanuel Tanko",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture1.png",
+            bio: "Associate Professor, researcher, and consultant in Urban Planning and Climate Change.",
+            details: ""
         },
         {
-            name: "John Doe",
+            name: "CHINGLE, MOSES PETER",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture2.png",
+            bio: "Professor of Epidemiology and Primary Health Care, University of Jos"
         },
         {
-            name: "John Doe",
+            name: "James Garba Ambafi (PhD)",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture3.png",
+            bio: "Senior Lecturer in the Department of Electrical & Electronics Engineering at the Federal University of Technology, Minna."
         },
         {
-            name: "John Doe",
+            name: "Dr. Rakiya Gambo Musa",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture4.png",
+            bio: "Senior Medical Officer at the University Clinic of the Federal University of Technology, Minna."
         },
         {
-            name: "John Doe",
+            name: "GBENGA MORENIKEJI",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture5.png",
+            bio: "Academic staff member in the Department of Estate Management at the Federal University of Technology, Minna."
         },
         {
-            name: "John Doe",
+            name: "Adeleye Bamiji Michael (PhD)",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture6.png",
+            bio: "Lecturer in the Department of Urban and Regional Planning at the Federal University of Technology Minna."
         },
         {
-            name: "John Doe",
+            name: "Henry Ohiani Ohize (PhD)",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture7.png",
+            bio: "Associate Professor of Electrical and Electronics Engineering at the Federal University of Technology Minna."
         },
         {
-            name: "John Doe",
+            name: "Chibueze Valentine Ikpo (PhD)",
             role: "Founder & CEO",
-            image: "/assets/images/placeholder/profile-pic-avatar.avif",
-            bio: "15+ years of experience in software development"
+            image: "/assets/images/profiles/Picture8.png",
+            bio: "Lecturer in Software Engineering at Veritas University, Nigeria."
         },
         {
             name: "John Doe",
@@ -76,7 +77,7 @@ const page = () => {
                         <div className="w-32 h-32 mx-auto mb-4">
                             <Image
                                 priority
-                                width={32}
+                                width={100}
                                 height={0}
                                 src={member.image}
                                 alt={member.name}
@@ -85,7 +86,9 @@ const page = () => {
                         </div>
                         <h3 className="text-xl font-semibold text-center">{member.name}</h3>
                         <p className="text-gray-600 text-center mb-2">{member.role}</p>
-                        <p className="text-gray-500 text-center text-sm">{member.bio}</p>
+                        <p className="text-gray-500 text-center text-sm">
+                            {member.bio.length > 300 ? `${member.bio.substring(0, 300)}...` : member.bio}
+                        </p>
                     </div>
                 ))}
             </div>
