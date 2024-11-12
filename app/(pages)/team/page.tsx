@@ -8,7 +8,7 @@ import { useStore } from "@/hooks/useStore";
 import { TeamMemberData, teamMembers } from "@/data/data";
 
 
-const page = () => {
+const TeamMembers = () => {
     const { memberDetailsOpen, setDetailsPanelOpen } = useStore()
     const [memberDetails, setMemberDetails] = useState<TeamMemberData | null>()
 
@@ -131,6 +131,6 @@ const MemberDetails = ({ memberDetails }: { memberDetails: TeamMemberData }) => 
     )
 }
 
-export default page;
+export default TeamMembers;
 
 
