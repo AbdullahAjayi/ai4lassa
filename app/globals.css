@@ -9,3 +9,16 @@
 .page-nav-panel ::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.member-detail-card::-webkit-scrollbar {
+  width: 4px;
+}
+
+.member-detail-card::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.member-detail-card::-webkit-scrollbar-thumb {
+  @apply bg-outline;
+  border-radius: 10px;
+}
