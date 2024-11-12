@@ -2,12 +2,12 @@ import { create } from "zustand"
 
 interface State {
   memberDetailsOpen: boolean
-  setMemberDetailsOpen: () => void
-  setProjectDetailsClosed: () => void
+  setDetailsPanelOpen: () => void
+  setDetailsPanelClosed: () => void
 }
 
 export const useStore = create<State>((set) => ({
   memberDetailsOpen: false,
-  setMemberDetailsOpen: () => set({ memberDetailsOpen: true }),
-  setProjectDetailsClosed: () => set({ memberDetailsOpen: false }),
+  setDetailsPanelOpen: () => set({ memberDetailsOpen: true }),
+  setDetailsPanelClosed: () => set({ memberDetailsOpen: false }),
 }))
