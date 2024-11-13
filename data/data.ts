@@ -75,6 +75,14 @@ export const teamMembers = [
     role: "Co-investigator",
     image: "/assets/images/profiles/Picture9.png",
     bio: "Senior Lecturer at Mechatronics Engineering. Team lead at Advanced Engineering Innovation Research Group.",
-    about: ``,
+    about: `Taliha A. Folorunso, PhD, is a Senior Lecturer in the Department of Mechatronics Engineering at the Federal University of Technology, Minna, Nigeria. He holds a PhD in Computer Engineering with a specialisation in Artificial Intelligence and Control, an MSc in Mechatronics and Automatic Control Engineering from Universiti Teknologi Malaysia (UTM), and a BEng in Electrical/Electronic Engineering from Ladoke Akintola University of Technology (LAUTECH), Ogbomoso. Before his academic career, Dr. Folorunso gained substantial industry experience, notably serving as a Quality Control Engineer at Saipem Contracting Nigeria Limited, where he contributed to the USAN Deep Sea Project, and as a Project Coordinator for Royal Moves Consulting, affiliated with Solar Turbines Services Nigeria Ltd.
+    Dr. Folorunso is an accomplished researcher in Control Systems, Robotics, Embedded Systems, Artificial Intelligence, and Precision Agriculture. He has authored over 40 publications in international peer-reviewed journals, conferences, and book chapters. As a Team Lead at the Advanced Engineering Innovation Research Group (AEIRG) at FUT Minna, he has secured several national and international research grants. Dr. Folorunso is a COREN Certified Engineer with memberships in multiple professional bodies, further solidifying his dual expertise in academia and industry. He is currently the Head of the Department of Mechatronics Engineering, FUT Minna.`,
+  },
+  {
+    name: "Sakinat Folorunso",
+    role: "Co-investigator",
+    image: "/assets/images/profiles/Picture10.png",
+    bio: " Computer Science lecturer at Olabisi Onabanjo University.  ",
+    about: `Sakinat Folorunso is a computer science lecturer and machine learning researcher at Olabisi Onabanjo University, Ago Iwoye, Ogun State, Nigeria. She had a B. Tech in Computer Science from the Federal University of Technology, Akure, Ondo State, Nigeria. She also had an M. Sc and Ph.D. in Computer science for the University of Ibadan, Ibadan, Oyo State, Nigeria. She has authored many journals and conference articles in Data mining, Machine Learning, Data Science and music information retrieval.`,
   },
 ]
