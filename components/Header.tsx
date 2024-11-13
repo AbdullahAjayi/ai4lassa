@@ -5,11 +5,13 @@ import Link from "next/link";
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import SplitType from "split-type";
+import { usePathname } from 'next/navigation';
 
 gsap.registerPlugin(useGSAP)
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const path = usePathname();
 
     useGSAP(() => {
         const target = new SplitType('.logo-text')
@@ -51,7 +53,7 @@ const Header = () => {
         <header className="px-10 py-5 fixed top-0 w-full left-0 backdrop-blur-sm z-[100000]">
             <div className="flex max-md:justify-between items-center">
                 <div className="font-bold">
-                    <Link href="/" className="logo-text text-xl">AI4LASSA</Link>
+                    <Link href="/" className="logo-text text-xl text-outline">AI4LASSA</Link>
                 </div>
 
                 <div className="md:hidden relative">
@@ -120,7 +122,9 @@ const Header = () => {
                             { navItem: "Resources", link: 'resources' },
                             { navItem: "Contact Us", link: 'contact' }
                         ].map((item, index) => (
-                            <li key={index} className="nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300"><Link href={item.link}>{item.navItem}</Link></li>
+                            <li key={index} className={`nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300 ${path === `/${item.link}` ? 'bg-btn/90 text-white' : ''}`}>
+                                <Link href={item.link}>{item.navItem}</Link>
+                            </li>
                         ))}
                     </ul>
                 </nav>
