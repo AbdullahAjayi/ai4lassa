@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={`${montserrat.variable} antialiased bg-appBg w-screen h-full min-h-screen overflow-x-hidden font-mono`}
       >
