@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyTacklingLassa from "@/components/WhyTacklingLassa";
 import Loader from "@/components/Loader";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -38,6 +39,7 @@ export default function Home() {
       <Hero />
       <About />
       <WhyTacklingLassa />
+      <Partners />
       <Footer />
     </>
   )
