@@ -2,16 +2,12 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
-import { ScrollTrigger } from "gsap/all"
 import { HiCursorClick } from "react-icons/hi";
 
 import Section from "./Section"
 import Button from "./Button"
 import { useCharacterAnimation, useSlideUpAnimation } from "@/hooks/useAnimation"
 
-gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const About = () => {
     useCharacterAnimation({ x: 30 })
