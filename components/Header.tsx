@@ -98,6 +98,7 @@ const Header = () => {
                         (<nav onClick={() => setMenuOpen(false)} className="bg-appBg shadow-xl -z-10 absolute w-[200px] rounded-lg -right-3 -top-3 overflow-hidden pt-10 pb-3">
                             <ul className="flex flex-col gap">
                                 {[
+                                    { navItem: "Home", link: '/' },
                                     { navItem: "About Us", link: 'about' },
                                     { navItem: "Forecast", link: 'forecast' },
                                     { navItem: "Report a Case", link: 'report' },
@@ -114,15 +115,16 @@ const Header = () => {
                 </div>
                 {/* Nav for larger screens */}
                 <nav className="mx-auto hidden md:block">
-                    <ul className="flex gap-3 lg:gap-5">
+                    <ul className="flex gap-2 lg:gap-5">
                         {[
+                            { navItem: "Home", link: '/' },
                             { navItem: "About Us", link: 'about' },
                             { navItem: "Forecast", link: 'forecast' },
                             { navItem: "Report a Case", link: 'report' },
                             { navItem: "Resources", link: 'resources' },
                             { navItem: "Contact Us", link: 'contact' }
                         ].map((item, index) => (
-                            <li key={index} className={`nav-pc opacity-0 font-medium text-sm hover:bg-btn hover:text-white rounded-lg p-3 px-4 transition-colors duration-300 ${path === `/${item.link}` ? 'bg-btn/90 text-white' : ''}`}>
+                            <li key={index} className={`nav-pc opacity-0 font-medium text-xs lg:text-sm hover:bg-btn hover:text-white rounded-lg p-3  lg:px-4 transition-colors duration-300 ${path === `/${item.link}` ? 'bg-btn/90 text-white' : ''}`}>
                                 <Link href={item.link}>{item.navItem}</Link>
                             </li>
                         ))}
